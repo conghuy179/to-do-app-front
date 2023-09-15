@@ -17,25 +17,24 @@
 
     <br>
 
-    <label id="lblsuccess" class="text-success" style="display: none;">
-    </label>
 
     <h2 class="text-2xl font-bold text-black text-center">Created by:
         <div href="https://www.linkedin.com/in/cong-huy-phan-1b39641a0/" class=" group font-medium text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-800">
             Phan Cong Huy
-            <a class="hidden group-hover:block text-blue-500 bg-black text-center">
-                Wanna know more about him?
-            </div>
+        </div>
+        <div class="invisible">
+            <p> Wanna know more about him?</p>
+        </div>
     </h2>
     <br>
 
-    <h2 class = "text-2x1 font-bold text-blue-600 ">To do List
-        <input type="text" id = "myInput" placeholder="Title">
+    <h2 class="text-2x1 font-bold text-blue-600">To do List
+        <input type="text" id="myInput" placeholder="Title" class="box-content">
         <button onclick="newElement()" class="addTask">Add</button>
     </h2>
 
-    <ul id="myTask text-center">
-        <li>Hit the gym</li>
+    <ul class="myTask hover:font-bold text-yellow-400">
+        <li class="uncheck hover:underline hover: text-red-500">Hit the gym</li>
         <li class="checked">Eat fried chicken</li>
         <li>Unbox 1 millions subs button</li>
     </ul>
