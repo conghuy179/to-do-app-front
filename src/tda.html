@@ -10,9 +10,9 @@
 
 <body>
     <header>
-    <h1 class="text-3xl font-bold text-white bg-orange-400 text-center p-5">
-        To-Do List
-    </h1>
+        <h1 class="text-3xl font-bold text-white bg-orange-400 text-center p-5 box-border h-13 w-13">
+            To-Do List
+        </h1>
     </header>
 
     <br>
@@ -20,46 +20,28 @@
     <label id="lblsuccess" class="text-success" style="display: none;">
     </label>
 
-    <h2 class="text-2xl font-bold text-black text-center">Created by: 
+    <h2 class="text-2xl font-bold text-black text-center">Created by:
         <div href="https://www.linkedin.com/in/cong-huy-phan-1b39641a0/" class=" group font-medium text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-800">
             Phan Cong Huy
             <a class="hidden group-hover:block text-blue-500 bg-black text-center">
-                Wanna know more about him?  
+                Wanna know more about him?
             </div>
     </h2>
+    <br>
 
-    <button class = "menu block text-gray-600">click button to open tasks list
-        
-          
-        <form id="addForm">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7">
-  
-                    <input type="text" onkeyup=
-                        "toggleButton(this, 'submit')"
-                        class="form-control" id="item">
-                </div>
-  
-                <div class="col-lg-5 col-md-5 col-sm-5">
-                <input type="submit" class="btn btn-dark"
-                        id="submit" value="Submit" disabled>
-                </div>
-            </div>
-        </form>
-        <br>
-        <il class = "task"> This is task 1
-            <a class = "edit-menu">Press this to open edit's menu of the task
-                <b class="edit-menu-edit-name">Press this button to edit task's name</b>
-                <br>
-                <b class="edit-menu-delete-task">Press this button to delete task</b>
-                <br>
-                <b class="edit-menu">Press this button to add information for each task</b>
-                <br>
-            </a>
-        </il>
-        <br>
-        <il class = "task">This is task 2</il>
-    </button>
+    <h2 class = "text-2x1 font-bold text-blue-600 ">To do List
+        <input type="text" id = "myInput" placeholder="Title">
+        <button onclick="newElement()" class="addTask">Add</button>
+    </h2>
+
+    <ul id="myTask text-center">
+        <li>Hit the gym</li>
+        <li class="checked">Eat fried chicken</li>
+        <li>Unbox 1 millions subs button</li>
+    </ul>
+
+
+
 
 </body>
 
