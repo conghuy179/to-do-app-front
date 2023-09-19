@@ -646,6 +646,12 @@ video {
     }
 }
 
+.header-author-link:hover {
+    text-decoration-line: underline;
+    color: darkblue;
+    
+}
+
 .header {
     background-color: orange;
     font-size: xx-large;
