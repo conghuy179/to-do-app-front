@@ -671,12 +671,11 @@ video {
     text-size-adjust: 20px;
     margin: auto;
     text-align: center;
-    box-sizing: border-box;
-    width: 500px;
-    height: 10px;
+    box-sizing: content-box;
+    width: 400px;
     padding: 20px;
-    border-radius: 500px;
-    border: 5px dashed black;
+    border-radius: 400px;
+    border: 4px dashed black;
 }
 
 .header-author-link:hover+.header-credit-invisible {
