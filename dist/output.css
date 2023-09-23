@@ -370,15 +370,6 @@ menu {
     box-sizing: border-box;
 }
 
-ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 20px 30px 50px 40px;
-    background-color: whitesmoke;
-    font-size: 30px;
-    transition: 0.2s;
-}
-
 
 /*
 Reset default styling for dialogs.
@@ -883,5 +874,18 @@ video {
     .box-content:hover {
         border: 200px rgb(66, 55, 55);
         color: rgb(197, 129, 2);
+    }
+    .task-list {
+        position: relative;
+        padding: 20px 30px 50px 40px;
+        background-color: whitesmoke;
+        font-size: 30px;
+    }
+    li {
+        border: 10px solid white;
+        color: blue;
+        padding: 10px;
+        height: 80px;
+        width: 1000px;
     }
 }
