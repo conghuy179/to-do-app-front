@@ -1,19 +1,12 @@
-// Create a "close" button and a "check" button and append it to each list item
+// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
-    var spancheck = document.createElement("SPANC")
-    var txtcheck = document.createTextNode("\u2713");
     span.className = "close";
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
-
-    spancheck.className = "check";
-    spancheck.appendChild(txtcheck);
-    myNodelist[i].appendChild(spancheck);
-
 }
 
 // Click on a close button to hide the current list item
