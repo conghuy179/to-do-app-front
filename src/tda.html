@@ -150,7 +150,7 @@
     <ul id="myUL">
         <li>Hit the gym</li>
         <li class="checked">Pay bills</li>
-        <li>Meet George</li>
+        <li>Meet Susu</li>
         <li>Buy eggs</li>
         <li>Read a book</li>
         <li>Organize office</li>
@@ -186,13 +186,14 @@
             }
         }
 
-        // Add a "checked" symbol when clicking on a list item
+        // Can edit task when double-clicking on a list item
         var list = document.querySelector('ul');
-        list.addEventListener('click', function(ev) {
+        list.addEventListener('dblclick', function(ev) {
             if (ev.target.tagName === 'LI') {
-                ev.target.classList.toggle('checked');
+                ev.target.classList.toggle();
             }
         }, false);
+
 
         // Create a new list item when clicking on the "Add" button
         function newElement() {
