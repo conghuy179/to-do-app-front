@@ -186,14 +186,23 @@
             }
         }
 
+        // Click on a checked button to appear completed text on the current list item
+        var finished = document.getElementsByClassName("check");
+        var i;
+        for (i = 0; i < finished.length; i++) {
+            finished[i].onclick = function() {
+                var spans = document.createTextNode("STATUS");
+                spans.className
+            }
+        }
+
         // Can edit task when double-clicking on a list item
         var list = document.querySelector('ul');
-        list.addEventListener('dblclick', function(ev) {
+        list.addEventListener('click', function(ev) {
             if (ev.target.tagName === 'LI') {
-                ev.target.classList.toggle();
+                ev.target.classList.toggle('checked');
             }
         }, false);
-
 
         // Create a new list item when clicking on the "Add" button
         function newElement() {
@@ -213,6 +222,12 @@
             span.className = "close";
             span.appendChild(txt);
             li.appendChild(span);
+
+            var spanc = document.createElement("SPANCHECK");
+            var txtc = document.createTextNode("\u2713");
+            spanc.className = "check";
+            spanc.appendChild(txtc);
+            myNodelist[i].appendChild(spanc);
 
             for (i = 0; i < close.length; i++) {
                 close[i].onclick = function() {
